@@ -1,44 +1,32 @@
-# Quasar App (quasar-project)
+# Quasar App (Desafio GIFs)
 
-desafio gifs
+Este é um projeto desenvolvido com o Quasar Framework para busca e exibição de GIFs.
 
-## Install the dependencies
+[Repositório no GitHub](https://github.com/LucasFranciscon/Desafio)
+
+---
+
+## **Pré-requisitos**
+- Node.js (versão 14 ou superior)
+- Gerenciador de pacotes (`npm` ou `yarn`)
+- API key para integração com o serviço de GIFs
+
+---
+
+## **Instruções para instalação e execução**
+
+### **1. Clonar o repositório**
+Clone este repositório na sua máquina local:
 ```bash
-yarn
-# or
-npm install
-```
-
-### Start the app in development mode (hot-code reloading, error reporting, etc.)
-```bash
-quasar dev
-```
+git clone https://github.com/LucasFranciscon/Desafio.git
+cd Desafio
 
 
-### Lint the files
-```bash
-yarn lint
-# or
-npm run lint
-```
+---
 
+## **Instalar as dependências e executar o projeto**
 
-### Format the files
-```bash
-yarn format
-# or
-npm run format
-```
+yarn && quasar dev
+# ou
+npm i && quasar dev
 
-
-### Build the app for production
-```bash
-quasar build
-```
-
-### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
-
-
-chave api
-hXUhNIfYNgo35pZ26oC60AMrL4vtqvH0

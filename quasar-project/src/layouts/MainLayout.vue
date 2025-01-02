@@ -3,7 +3,7 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-          <img src="/img/logosg.png" alt="Logo" class="q-mr-md q-mt-sm" />
+          <img src="/img/logosg.png" alt="Logo" class="q-mr-md q-mt-sm" style="width: 8%;"/>
         </q-toolbar-title>
         <div class="q-gutter-sm flex items-center">
           <span class="q-mr-xs text-lg font-semibold">Lucas Franciscon</span>
@@ -13,39 +13,56 @@
         </div>
       </q-toolbar>
     </q-header>
-    <q-drawer show-if-above v-model="leftDrawerOpen" bordered class="bg-blue-800" style="background-color: #172554 !important;">
+    <q-drawer 
+      show-if-above 
+      v-model="leftDrawerOpen" 
+      bordered 
+      class="bg-blue-800" 
+      style="background-color: #172554 !important; border-top-right-radius: 0.5rem !important;">
       <q-list>
         <q-item
           to="/"
           clickable
-          exact-active-class="bg-blue-600"
-          class="hover:bg-blue-700 focus:outline-none"
+          exact-active-class="bg-blue"
+          style="border-radius: 1rem !important; margin-left: 12px; margin-right: 12px; margin-top:4px" 
         >
-          <q-item-section class="text-lg font-semibold text-white hover:text-blue-500">Home</q-item-section>
+         <div class="flex items-center">
+            <q-icon name="home" class="text-white" style="margin-right: 5px;" />
+            <q-item-section class="text-lg font-semibold text-white hover:text-blue-500">Home</q-item-section>
+          </div>
         </q-item>
         <q-item
           to="/favoritos"
           clickable
-          exact-active-class="bg-blue-600"
-          class="hover:bg-blue-700 focus:outline-none"
+          exact-active-class="bg-blue"
+          style="border-radius: 1rem !important; margin-left: 12px; margin-right: 12px; margin-top:4px" 
         >
-          <q-item-section class="text-lg font-semibold text-white hover:text-blue-500">Favoritos</q-item-section>
+          <div class="flex items-center">
+            <q-icon name="favorite" class="text-white" style="margin-right: 5px;" />
+            <q-item-section class="text-lg font-semibold text-white hover:text-blue-500">Favoritos</q-item-section>
+          </div>
         </q-item>
         <q-item
           to="/categorias"
           clickable
-          exact-active-class="bg-blue-600"
-          class="hover:bg-blue-700 focus:outline-none"
+          exact-active-class="bg-blue"
+          style="border-radius: 1rem !important; margin-left: 12px; margin-right: 12px; margin-top:4px" 
         >
-          <q-item-section class="text-lg font-semibold text-white hover:text-blue-500">Categorias</q-item-section>
+          <div class="flex items-center">
+            <q-icon name="category" class="text-white" style="margin-right: 5px;" />
+            <q-item-section class="text-lg font-semibold text-white hover:text-blue-500">Categorias</q-item-section>
+          </div>
         </q-item>
         <q-item
           to="/sobre"
           clickable
-          exact-active-class="bg-blue-600"
-          class="hover:bg-blue-700 focus:outline-none"
+          exact-active-class="bg-blue"
+          style="border-radius: 1rem !important; margin-left: 12px; margin-right: 12px; margin-top:4px" 
         >
-          <q-item-section class="text-lg font-semibold text-white hover:text-blue-500">Sobre</q-item-section>
+          <div class="flex items-center">
+            <q-icon name="info" class="text-white" style="margin-right: 5px;" />
+            <q-item-section class="text-lg font-semibold text-white hover:text-blue-500">Sobre</q-item-section>
+          </div>
         </q-item>
       </q-list>
     </q-drawer>

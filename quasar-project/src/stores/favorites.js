@@ -6,12 +6,20 @@ export const useFavoritesStore = defineStore('favorites', {
   }),
   actions: {
     addFavorite(gif) {
-      this.favorites.push(gif)
-      localStorage.setItem('favorites', JSON.stringify(this.favorites))
+      if (!this.isFavorite(gif)) {
+        this.favorites.push(gif)
+        localStorage.setItem('favorites', JSON.stringify(this.favorites))
+      }
     },
     removeFavorite(gif) {
-      this.favorites = this.favorites.filter(item => item.id !== gif.id)
-      localStorage.setItem('favorites', JSON.stringify(this.favorites))
+      const index = this.favorites.findIndex(favorite => favorite.id === gif.id)
+      if (index !== -1) {
+        this.favorites.splice(index, 1)
+        localStorage.setItem('favorites', JSON.stringify(this.favorites))
+      }
+    },
+    isFavorite(gif) {
+      return this.favorites.some(favorite => favorite.id === gif.id)
     }
   }
 })
