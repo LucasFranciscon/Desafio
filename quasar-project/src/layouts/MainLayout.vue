@@ -3,7 +3,6 @@
     <q-header elevated>
       <q-toolbar>
         <q-toolbar-title>
-          <img src="/img/logosg.png" alt="Logo" class="q-mr-md q-mt-sm" style="width: 8%;"/>
         </q-toolbar-title>
         <div class="q-gutter-sm flex items-center">
           <span class="q-mr-xs text-lg font-semibold">Lucas Franciscon</span>
